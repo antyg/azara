@@ -1,0 +1,28 @@
+{
+  "displayName": "antyg-ProtectionAudit-Combined",
+  "description": "Identity protection (risk events, risky users) — delegated + application permissions (maximum flexibility)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": true,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost",
+    "https://login.microsoftonline.com/common/oauth2/nativeclient",
+    "ms-appx-web://Microsoft.AAD.BrokerPlugin/{clientId}",
+    "msal{clientId}://auth"
+  ],
+  "permissions": {
+    "graph": {
+      "delegated": [
+        "IdentityRiskEvent.Read.All",
+        "IdentityRiskyUser.Read.All"
+      ],
+      "application": [
+        "IdentityRiskEvent.Read.All",
+        "IdentityRiskyUser.Read.All"
+      ]
+    }
+  }
+}

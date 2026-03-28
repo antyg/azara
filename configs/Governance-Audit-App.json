@@ -1,0 +1,23 @@
+{
+  "displayName": "antyg-GovernanceAudit-App",
+  "description": "Identity governance (PIM, access reviews, entitlement management, consent) — application permissions only (daemon/service context)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": false,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost"
+  ],
+  "permissions": {
+    "graph": {
+      "application": [
+        "AccessReview.Read.All",
+        "ConsentRequest.Read.All",
+        "EntitlementManagement.Read.All",
+        "PrivilegedAccess.Read.AzureADGroup"
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "displayName": "antyg-IntuneAudit-App",
+  "description": "Intune read-only audit — application permissions only (daemon/service context)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": false,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost"
+  ],
+  "permissions": {
+    "graph": {
+      "application": [
+        "AccessReview.Read.All",
+        "AuditLog.Read.All",
+        "BitlockerKey.ReadBasic.All",
+        "CloudPC.Read.All",
+        "ConsentRequest.Read.All",
+        "Device.Read.All",
+        "DeviceLocalCredential.ReadBasic.All",
+        "DeviceManagementApps.Read.All",
+        "DeviceManagementCloudCA.Read.All",
+        "DeviceManagementConfiguration.Read.All",
+        "DeviceManagementManagedDevices.Read.All",
+        "DeviceManagementRBAC.Read.All",
+        "DeviceManagementServiceConfig.Read.All",
+        "Directory.Read.All",
+        "EntitlementManagement.Read.All",
+        "Group.Read.All",
+        "IdentityRiskEvent.Read.All",
+        "IdentityRiskyUser.Read.All",
+        "InformationProtectionPolicy.Read.All",
+        "Policy.Read.All",
+        "PrivilegedAccess.Read.AzureADGroup",
+        "RoleManagement.Read.Directory",
+        "SecurityAlert.Read.All",
+        "SecurityIncident.Read.All",
+        "ThreatHunting.Read.All",
+        "User.Read.All",
+        "WindowsUpdates.ReadWrite.All"
+      ]
+    }
+  }
+}

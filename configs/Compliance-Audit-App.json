@@ -1,0 +1,20 @@
+{
+  "displayName": "antyg-ComplianceAudit-App",
+  "description": "Information protection and compliance (Purview sensitivity labels) — application permissions only (daemon/service context)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": false,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost"
+  ],
+  "permissions": {
+    "graph": {
+      "application": [
+        "InformationProtectionPolicy.Read.All"
+      ]
+    }
+  }
+}

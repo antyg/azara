@@ -1,0 +1,22 @@
+{
+  "displayName": "antyg-SecOpsAudit-App",
+  "description": "Security operations (M365 Defender alerts, incidents, hunting) — application permissions only (daemon/service context)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": false,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost"
+  ],
+  "permissions": {
+    "graph": {
+      "application": [
+        "SecurityAlert.Read.All",
+        "SecurityIncident.Read.All",
+        "ThreatHunting.Read.All"
+      ]
+    }
+  }
+}

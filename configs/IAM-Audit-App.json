@@ -1,0 +1,25 @@
+{
+  "displayName": "antyg-IAMAudit-App",
+  "description": "Identity and access management umbrella (governance + protection) — application permissions only (daemon/service context)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": false,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost"
+  ],
+  "permissions": {
+    "graph": {
+      "application": [
+        "AccessReview.Read.All",
+        "ConsentRequest.Read.All",
+        "EntitlementManagement.Read.All",
+        "IdentityRiskEvent.Read.All",
+        "IdentityRiskyUser.Read.All",
+        "PrivilegedAccess.Read.AzureADGroup"
+      ]
+    }
+  }
+}

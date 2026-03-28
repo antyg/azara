@@ -1,0 +1,37 @@
+# Timestamped output files (Invoke-AppRegistration.ps1 results)
+# Pattern: <configBaseName>.<yyyyMMdd_HHmmss>.json
+*.[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9][0-9][0-9][0-9].json
+
+# Temporary files
+temp/
+*.tmp
+*.temp
+*.cache
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+
+# Testing
+TestResults/
+*.coverage
+*.trx
+
+# Agent infrastructure
+.claude/
+
+# Local configuration overrides
+local.settings.json
+*.local.json

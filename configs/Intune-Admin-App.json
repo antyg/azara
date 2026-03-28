@@ -1,0 +1,46 @@
+{
+  "displayName": "antyg-IntuneAdmin-App",
+  "description": "Intune administration and device management — application permissions only (daemon/service context)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": false,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost"
+  ],
+  "permissions": {
+    "graph": {
+      "application": [
+        "AccessReview.Read.All",
+        "AuditLog.Read.All",
+        "BitlockerKey.ReadBasic.All",
+        "CloudPC.ReadWrite.All",
+        "ConsentRequest.Read.All",
+        "Device.Read.All",
+        "DeviceLocalCredential.ReadBasic.All",
+        "DeviceManagementApps.ReadWrite.All",
+        "DeviceManagementCloudCA.ReadWrite.All",
+        "DeviceManagementConfiguration.ReadWrite.All",
+        "DeviceManagementManagedDevices.ReadWrite.All",
+        "DeviceManagementRBAC.ReadWrite.All",
+        "DeviceManagementScripts.ReadWrite.All",
+        "DeviceManagementServiceConfig.ReadWrite.All",
+        "Directory.Read.All",
+        "EntitlementManagement.Read.All",
+        "Group.ReadWrite.All",
+        "IdentityRiskEvent.Read.All",
+        "IdentityRiskyUser.Read.All",
+        "Policy.Read.All",
+        "PrivilegedAccess.Read.AzureADGroup",
+        "RoleManagement.Read.Directory",
+        "SecurityAlert.Read.All",
+        "SecurityIncident.Read.All",
+        "ThreatHunting.Read.All",
+        "User.Read.All",
+        "WindowsUpdates.ReadWrite.All"
+      ]
+    }
+  }
+}

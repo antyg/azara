@@ -1,0 +1,30 @@
+{
+  "displayName": "antyg-SecOpsAudit-Combined",
+  "description": "Security operations (M365 Defender alerts, incidents, hunting) — delegated + application permissions (maximum flexibility)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": true,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost",
+    "https://login.microsoftonline.com/common/oauth2/nativeclient",
+    "ms-appx-web://Microsoft.AAD.BrokerPlugin/{clientId}",
+    "msal{clientId}://auth"
+  ],
+  "permissions": {
+    "graph": {
+      "delegated": [
+        "SecurityAlert.Read.All",
+        "SecurityIncident.Read.All",
+        "ThreatHunting.Read.All"
+      ],
+      "application": [
+        "SecurityAlert.Read.All",
+        "SecurityIncident.Read.All",
+        "ThreatHunting.Read.All"
+      ]
+    }
+  }
+}

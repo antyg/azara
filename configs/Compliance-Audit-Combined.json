@@ -1,0 +1,26 @@
+{
+  "displayName": "antyg-ComplianceAudit-Combined",
+  "description": "Information protection and compliance (Purview sensitivity labels) — delegated + application permissions (maximum flexibility)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": true,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost",
+    "https://login.microsoftonline.com/common/oauth2/nativeclient",
+    "ms-appx-web://Microsoft.AAD.BrokerPlugin/{clientId}",
+    "msal{clientId}://auth"
+  ],
+  "permissions": {
+    "graph": {
+      "delegated": [
+        "InformationProtectionPolicy.Read"
+      ],
+      "application": [
+        "InformationProtectionPolicy.Read.All"
+      ]
+    }
+  }
+}

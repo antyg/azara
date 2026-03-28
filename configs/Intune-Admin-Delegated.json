@@ -1,0 +1,49 @@
+{
+  "displayName": "antyg-IntuneAdmin-Delegated",
+  "description": "Intune administration and device management — delegated permissions only (interactive user context)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": true,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost",
+    "https://login.microsoftonline.com/common/oauth2/nativeclient",
+    "ms-appx-web://Microsoft.AAD.BrokerPlugin/{clientId}",
+    "msal{clientId}://auth"
+  ],
+  "permissions": {
+    "graph": {
+      "delegated": [
+        "AccessReview.Read.All",
+        "AuditLog.Read.All",
+        "BitlockerKey.ReadBasic.All",
+        "CloudPC.ReadWrite.All",
+        "ConsentRequest.Read.All",
+        "Device.Read.All",
+        "DeviceLocalCredential.ReadBasic.All",
+        "DeviceManagementApps.ReadWrite.All",
+        "DeviceManagementCloudCA.ReadWrite.All",
+        "DeviceManagementConfiguration.ReadWrite.All",
+        "DeviceManagementManagedDevices.ReadWrite.All",
+        "DeviceManagementRBAC.ReadWrite.All",
+        "DeviceManagementScripts.ReadWrite.All",
+        "DeviceManagementServiceConfig.ReadWrite.All",
+        "Directory.Read.All",
+        "EntitlementManagement.Read.All",
+        "Group.ReadWrite.All",
+        "IdentityRiskEvent.Read.All",
+        "IdentityRiskyUser.Read.All",
+        "Policy.Read.All",
+        "PrivilegedAccess.Read.AzureADGroup",
+        "RoleManagement.Read.Directory",
+        "SecurityAlert.Read.All",
+        "SecurityIncident.Read.All",
+        "ThreatHunting.Read.All",
+        "User.Read.All",
+        "WindowsUpdates.ReadWrite.All"
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "displayName": "antyg-E8Audit-Combined",
+  "description": "Essential Eight audit and compliance verification — delegated + application permissions (maximum flexibility)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": true,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost",
+    "https://login.microsoftonline.com/common/oauth2/nativeclient",
+    "ms-appx-web://Microsoft.AAD.BrokerPlugin/{clientId}",
+    "msal{clientId}://auth"
+  ],
+  "permissions": {
+    "graph": {
+      "delegated": [
+        "AccessReview.Read.All",
+        "Application.Read.All",
+        "AuditLog.Read.All",
+        "ConsentRequest.Read.All",
+        "DeviceLocalCredential.Read.All",
+        "DeviceManagementApps.Read.All",
+        "DeviceManagementConfiguration.Read.All",
+        "DeviceManagementManagedDevices.Read.All",
+        "Directory.Read.All",
+        "EntitlementManagement.Read.All",
+        "Group.Read.All",
+        "GroupMember.Read.All",
+        "IdentityRiskEvent.Read.All",
+        "IdentityRiskyUser.Read.All",
+        "InformationProtectionPolicy.Read",
+        "Organization.Read.All",
+        "Policy.Read.All",
+        "PrivilegedAccess.Read.AzureADGroup",
+        "RecordsManagement.Read.All",
+        "RoleEligibilitySchedule.Read.Directory",
+        "RoleManagement.Read.Directory",
+        "RoleManagementPolicy.Read.Directory",
+        "SecurityAlert.Read.All",
+        "SecurityEvents.Read.All",
+        "SecurityIncident.Read.All",
+        "ThreatHunting.Read.All",
+        "ThreatIntelligence.Read.All",
+        "User.Read.All",
+        "UserAuthenticationMethod.Read.All",
+        "WindowsUpdates.ReadWrite.All"
+      ],
+      "application": [
+        "AccessReview.Read.All",
+        "Application.Read.All",
+        "AuditLog.Read.All",
+        "ConsentRequest.Read.All",
+        "DeviceLocalCredential.Read.All",
+        "DeviceManagementApps.Read.All",
+        "DeviceManagementConfiguration.Read.All",
+        "DeviceManagementManagedDevices.Read.All",
+        "Directory.Read.All",
+        "EntitlementManagement.Read.All",
+        "Group.Read.All",
+        "GroupMember.Read.All",
+        "IdentityRiskEvent.Read.All",
+        "IdentityRiskyUser.Read.All",
+        "InformationProtectionPolicy.Read.All",
+        "Organization.Read.All",
+        "Policy.Read.All",
+        "PrivilegedAccess.Read.AzureADGroup",
+        "RecordsManagement.Read.All",
+        "RoleEligibilitySchedule.Read.Directory",
+        "RoleManagement.Read.Directory",
+        "RoleManagementPolicy.Read.Directory",
+        "SecurityAlert.Read.All",
+        "SecurityEvents.Read.All",
+        "SecurityIncident.Read.All",
+        "ThreatHunting.Read.All",
+        "ThreatIntelligence.Read.All",
+        "User.Read.All",
+        "UserAuthenticationMethod.Read.All",
+        "WindowsUpdates.ReadWrite.All"
+      ]
+    },
+    "mde": {
+      "delegated": [
+        "Machine.Read",
+        "SecurityRecommendation.Read",
+        "Software.Read",
+        "Vulnerability.Read"
+      ],
+      "application": [
+        "Machine.Read.All",
+        "SecurityRecommendation.Read.All",
+        "Software.Read.All",
+        "Vulnerability.Read.All"
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "displayName": "antyg-ProtectionAudit-App",
+  "description": "Identity protection (risk events, risky users) — application permissions only (daemon/service context)",
+  "signInAudience": "AzureADMyOrg",
+  "isFallbackPublicClient": false,
+  "implicitGrantSettings": {
+    "enableIdTokenIssuance": false,
+    "enableAccessTokenIssuance": false
+  },
+  "redirectUris": [
+    "http://localhost"
+  ],
+  "permissions": {
+    "graph": {
+      "application": [
+        "IdentityRiskEvent.Read.All",
+        "IdentityRiskyUser.Read.All"
+      ]
+    }
+  }
+}
