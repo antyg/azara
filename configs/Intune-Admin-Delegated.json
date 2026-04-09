@@ -37,7 +37,7 @@
         "IdentityRiskyUser.Read.All",
         "Policy.Read.All",
         "PrivilegedAccess.Read.AzureADGroup",
-        "RoleManagement.Read.Directory",
+        "RoleManagement.ReadWrite.Directory",
         "SecurityAlert.Read.All",
         "SecurityIncident.Read.All",
         "ThreatHunting.Read.All",
